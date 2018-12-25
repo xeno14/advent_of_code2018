@@ -8,7 +8,6 @@ def dist(x1, x2):
 
 def solve(filename):
     with open(filename) as f:
-        # with open("input/23.txt") as f:
         points = []
 
         for line in f.readlines():
@@ -16,7 +15,6 @@ def solve(filename):
 
             points.append([x,y,z,w])
     points = np.array(points)
-    # print(points)
 
     adj = dict()  # adjacent list
 
